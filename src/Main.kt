@@ -1,13 +1,14 @@
 //TIP 코드를 <b>실행</b>하려면 <shortcut actionId="Run"/>을(를) 누르거나
 // 에디터 여백에 있는 <icon src="AllIcons.Actions.Execute"/> 아이콘을 클릭하세요.
 fun main() {
-  for (i in 2..9) {
-    println("=== $i 단 ===")
-    for (j in 1..9) {
-      println("$i x $j = ${i * j}")
-    }
-    println() // 줄바꿈
-  }
+//  for (i in 2..9) {
+//    println("=== $i 단 ===")
+//    for (j in 1..9) {
+//      println("$i x $j = ${i * j}")
+//    }
+//    println() // 줄바꿈
+//  }
+
 
 val name = "Kotlin"
 
@@ -34,9 +35,24 @@ when (name) {
   numberString = "문자열임"
   println(numberString)
   
-  var arrayTest: Array<Any> =  arrayOf(1,2,3, "문자", "숫자")
+  var arrayTest: Array<Any> =  arrayOf(1,2,3, "문자열", "숫자")
   println(arrayTest[3])
+
+    // 컬렉션
+  val class1= CollectionTest()
+  class1.sample1()
+  //
+  val class2= CollectionTest()
+  class2.sample2()
+
+  val class3= CollectionTest()
+  class3.sample3()
+
+
+  val class4= CollectionTest()
+  class4.sample4()
 }
+
 
 fun add(a: Int, b: Int): Int {
   return a + b
