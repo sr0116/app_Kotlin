@@ -12,7 +12,3 @@
 - 간단한 회원(Member) 등록/조회 API 구현  
 
 ---
-
-## ✔ 실행 방법
-```bash
-./gradlew bootRun
